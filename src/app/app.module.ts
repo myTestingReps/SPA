@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatListModule,MatSidenavModule,MatInputModule} from '@angular/material';
-
+import {SideComponent} from './side_component/side-component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,SideComponent
   ],
   imports: [
     BrowserModule,
