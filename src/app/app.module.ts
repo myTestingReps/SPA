@@ -7,9 +7,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatListModule,MatSidenavModule,MatInputModule} from '@angular/material';
 import {SideComponent} from './side_component/side-component';
 import { SearchComponent } from './search_component/search-component';
+import { ListComponent } from './list_component/list-component';
 @NgModule({
   declarations: [
-    AppComponent,SideComponent,SearchComponent
+    AppComponent,SideComponent,SearchComponent,ListComponent
   ],
   imports: [
     BrowserModule,
