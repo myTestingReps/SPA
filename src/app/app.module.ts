@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatListModule,MatSidenavModule,MatInputModule} from '@angular/material';
 import {SideComponent} from './side_component/side-component';
+import { SearchComponent } from './search_component/search-component';
 @NgModule({
   declarations: [
-    AppComponent,SideComponent
+    AppComponent,SideComponent,SearchComponent
   ],
   imports: [
     BrowserModule,
