@@ -8,9 +8,11 @@ import {MatListModule,MatSidenavModule,MatInputModule} from '@angular/material';
 import {SideComponent} from './side_component/side-component';
 import { SearchComponent } from './search_component/search-component';
 import { ListComponent } from './list_component/list-component';
+import { ClientComponent } from './clients/client-info';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent,SideComponent,SearchComponent,ListComponent
+    AppComponent,SideComponent,SearchComponent,ListComponent,ClientComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { ListComponent } from './list_component/list-component';
     BrowserAnimationsModule,
     MatListModule,
     MatSidenavModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
 
   ],
   providers: [],
