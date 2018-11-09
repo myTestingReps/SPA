@@ -1,8 +1,19 @@
 <mat-sidenav-container class="side-component">
     <mat-sidenav class ="side" mode="side" opened> 
       <search-component></search-component>
-      <list-component></list-component>
+      <client-component (onClient) = "onClient($event)"></client-component>
     </mat-sidenav>
-    <mat-sidenav-content>Main content</mat-sidenav-content>
+    <mat-sidenav-content>
+      <mat-list>
+        <mat-list-item class='list-item'  *ngFor="let client of clients; let i = index"> 
+                     <img mat-list-avatar src="{{client.general.avatar}}" alt="Desc 1">
+                     <h3 mat-line>{{client.general.firstName +' ' +client.general.lastName }}</h3>
+                     <p mat-line>
+                       <span>{{client.job.title}}</span>
+                     </p>
+        </mat-list-item>   
+        </mat-list>
+
+    </mat-sidenav-content>
   </mat-sidenav-container>
   
